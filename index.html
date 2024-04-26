@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+  <body>
+  <div class = "container">
+  <header class="header">
+    <h1 id = "title" class="center">
+      Welcome to the Study Survey!
+    </h1>
+    <p id="description" class="desc center">Thank you for taking time, this will help to improve study process</p>
+    </header>
+    
+    <form id="survey form">
+      <div class="form-group">
+        <label id="name-label" 
+        for = "name">Name</label>
+        <input 
+         type = "text"
+         name = "name"
+         id = "name"
+         class = "form-control"
+         placeholder = "Enter your name" required />
+      </div>
+      <div class = "form-group">
+        <label id = "email-label" for = "email">Email</label>
+        <input
+           type = "email"
+           name = "email"
+           id = "email"
+           class = "form-control"
+           placeholder = "Enter you email"
+           required/>
+      </div>
+      
+      <div class = "form-group">
+        <label id = "Position-label" for = "position">Your current role</label>
+        <select id = "dropdown"
+                name = "role"
+                class = "form-control" required>
+          <option disabled selected value>Select current role</option>
+        <option value="student">Student</option>
+        <option value="lecturer">Lecturer</option>
+        </select>
+      </div>
+      <div class = "form-group"><p>Evaluate study flow:</p>
+        <label>
+        <input
+          name="user-recommend"
+          value="good"
+          type="radio"
+          class="input-radio"
+         />
+          Well constructed
+        </label>
+        <label>
+        <input
+          name="user-recommend"
+          value="improve"
+          type="radio"
+          class="input-radio"
+         />Need to be improved </label>
+      </div>
+      <div class = "form-group">
+        <p>What would you like to improve?
+        <span class = "clue">
+          (Multiple choices enabled)
+          </span>
+        </p>
+        
+        <label><input 
+                 name = "prefer"
+                 type = "checkbox"
+                 value = "timetable"
+                 class = "input-checkbox"/>Timetable
+        </label>
+        <label><input 
+               name = "prefer"
+               type = "checkbox"
+               value = "n-tasks"
+               class = "input-checkbox"/>Amount of assignments
+        </label>
+        
+         <label><input 
+               name = "prefer"
+               type = "checkbox"
+               value = "grades"
+               class = "input-checkbox"/>Grading system
+        </label>
+         <label><input 
+               name = "prefer"
+               type = "checkbox"
+               value = "subjects"
+               class = "input-checkbox"/>Subjects relations
+        </label>
+        
+         <label><input 
+               name = "prefer"
+               type = "checkbox"
+               value = "projects"
+               class = "input-checkbox"/>Projects
+        </label>
+      </div>
+      
+      <div class = "form-group">
+        <p>Suggestions or Comments:</p>
+        <textarea id = "comments"
+              class = "input-textarea"
+               name = "comment"
+               placeholeder = "Enter your comments here...">
+        </textarea>
+       </div>
+      
+      <div class = "form-group">
+        <button type = "submit"
+                id = "submit"
+                class = "submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+    </body>
+</html>
